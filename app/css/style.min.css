@@ -1220,6 +1220,7 @@ h4 {
 .socials__link {
   -webkit-filter: drop-shadow(0px 4px 4px #000000);
           filter: drop-shadow(0px 4px 4px #000000);
+  border-radius: 3px;
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -1232,8 +1233,8 @@ h4 {
           box-shadow: 0px 3px 15px #5690C5;
 }
 .socials__img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .accordion .ui-accordion-header-icon {
@@ -1957,11 +1958,6 @@ h4 {
   }
 }
 @media (max-width: 1300px) {
-  .socials__img {
-    width: 30px;
-    height: 30px;
-  }
-
   .header .nav__menu {
     display: none;
   }

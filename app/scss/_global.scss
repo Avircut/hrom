@@ -98,6 +98,7 @@ h4{
     gap:25px;
     &__link{
         filter: drop-shadow(0px 4px 4px #000000);
+        border-radius: 3px;
         transition: .3s all ease-in-out;
         &::after{
             display: none;
@@ -107,8 +108,8 @@ h4{
         }
     }
     &__img{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 }
 .accordion{
