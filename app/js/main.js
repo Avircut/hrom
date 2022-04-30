@@ -73,3 +73,10 @@ $('a[href*="#"]')
       }
     }
   });
+  document.addEventListener('scroll', (e) => {
+    if(window.scrollY >100){
+      $('.header').addClass('top');
+    } else{
+      $('.header').removeClass('top');
+    }
+  })

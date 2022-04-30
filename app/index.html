@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Хром38</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.min.css">
     <script defer="defer" src="js/main.min.js"></script>
   </head>
@@ -13,7 +14,7 @@
       <div class="container">
         <div class="header__inner">
           <nav class="header__nav nav">
-            <div class="nav__logo logo"><a class="logo-link" href="#top"><img class="logo-img" src="images/logo/logo.svg" alt="Логотип Хром38"></a></div>
+            <div class="nav__logo logo"><a class="logo-link" href="#top"><img class="logo-img" src="images/logo/logo.png" alt="Логотип Хром38"></a></div>
             <ul class="nav__menu">
               <li class="nav__menu-item"><a class="nav__menu-link" href="#favorites">Услуги </a></li>
               <li class="nav__menu-item"><a class="nav__menu-link" href="#prices">Стоимость </a></li>
@@ -53,7 +54,7 @@
           <div class="container">
             <div class="favorites__inner">
               <div class="favorites__list">
-                <div class="favorites__item"><img class="favorites__img" src="images/content/favs-1.jpg" alt="Восстановление отражателей фар">
+                <div class="favorites__item" id="fari"><img class="favorites__img" src="images/content/favs-1.jpg" alt="Восстановление отражателей фар">
                   <div class="favorites__item-text">
                     <div class="favorites__line">
                       <h2 class="favorites__title">Восстановление отражателей фар</h2>
@@ -63,7 +64,7 @@
                       <div class="btn">Заказать услугу</div></a>
                   </div>
                 </div>
-                <div class="favorites__item"><img class="favorites__img" src="images/content/favs-2.jpg" alt="Восстановление отражателей фар">
+                <div class="favorites__item" id="diski"><img class="favorites__img" src="images/content/favs-2.jpg" alt="Восстановление отражателей фар">
                   <div class="favorites__item-text">
                     <div class="favorites__line">
                       <h2 class="favorites__title">Хромирование и никелирование дисков</h2>
@@ -73,7 +74,7 @@
                       <div class="btn">Написать  нам</div></a>
                   </div>
                 </div>
-                <div class="favorites__item"><img class="favorites__img" src="images/content/favs-3.jpg" alt="Восстановление отражателей фар">
+                <div class="favorites__item" id="other"><img class="favorites__img" src="images/content/favs-3.jpg" alt="Восстановление отражателей фар">
                   <div class="favorites__item-text">
                     <div class="favorites__line">
                       <h2 class="favorites__title">Хромирование и никелирование декоративных элементов</h2>
@@ -92,32 +93,32 @@
             <div class="prices__inner">
               <h3 class="prices__title">Стоимость услуг</h3>
               <div class="prices__list">
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Восстановление отражателей фар</h4>
+                <div class="prices__item"><a class="prices__link" href="#fari">
+                    <h4 class="prices__item-title">Восстановление отражателей фар</h4></a>
                   <p class="prices__item-price">Стоимость от 2 000 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Хромирование и никелирование дисков</h4>
+                <div class="prices__item"><a class="prices__link" href="#diski">
+                    <h4 class="prices__item-title">Хромирование и никелирование дисков</h4></a>
                   <p class="prices__item-price">Стоимость от 15 000 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Хромирование и никелирование молдингов</h4>
+                <div class="prices__item"><a class="prices__link" href="#other">
+                    <h4 class="prices__item-title">Хромирование и никелирование молдингов</h4></a>
                   <p class="prices__item-price">Стоимость от 1 500 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Хромирование и никелирование ручек дверей</h4>
+                <div class="prices__item"><a class="prices__link" href="#other">
+                    <h4 class="prices__item-title">Хромирование и никелирование ручек дверей</h4></a>
                   <p class="prices__item-price">Стоимость от 1 500 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Хромирование и никелирование решетки радиатора</h4>
+                <div class="prices__item"><a class="prices__link" href="#other">
+                    <h4 class="prices__item-title">Хромирование и никелирование решетки радиатора</h4></a>
                   <p class="prices__item-price">Стоимость от 3 000 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Восстановление хромированых элементов сантехники</h4>
+                <div class="prices__item"><a class="prices__link" href="#other">
+                    <h4 class="prices__item-title">Восстановление хромированых элементов сантехники</h4></a>
                   <p class="prices__item-price">Стоимость от 2 000 руб</p>
                 </div>
-                <div class="prices__item">
-                  <h4 class="prices__item-title">Хромирование и никелирование шильдиков (эмблем)</h4>
+                <div class="prices__item"><a class="prices__link" href="#other">
+                    <h4 class="prices__item-title">Хромирование и никелирование шильдиков (эмблем)</h4></a>
                   <p class="prices__item-price">Стоимость от 700 руб</p>
                 </div>
               </div><a class="price__btn btn-wrapper" href="#" data-fancybox data-src="#form" data-type="clone">
@@ -133,7 +134,7 @@
                   <h2 class="delivery__title">Условия доставки</h2>
                 </div>
                 <h4 class="delivery__heading">Уважаемые клиенты!</h4>
-                <p class="delivery__desc">Оформить заказ и получить подробную консультацию вы можете по телефону <br>+7 950 080 88 04 или оставив заявку на нашем сайте!</p>
+                <p class="delivery__desc">Оформить заказ и получить подробную консультацию вы можете по телефону <br><a href="tel:+79500808804">+7 950 080 88 04</a> или оставив заявку на нашем сайте!</p>
                 <h4 class="delivery__heading">Способы и стоимость доставки:</h4>
                 <p class="delivery__desc">Для жителей города Иркутска: <br>доставка от клиента и обратно по городу Иркутску – от 1000 рублей<br><br>Для жителей других регионов и городов России:<br>компания «Хром38» осуществляет доставку готовых изделий через различные удобные для Вас транспортные компании<br><br>Все услуги могут оплачиваться как наличным, так и безналичным расчетом<br><br>Услуги доставки выбранной Вами транспортной компанией оплачиваются по тарифам</p>
               </div><img class="delivery__img" src="images/content/delivery.jpg" alt="Условия доставки изображение">
@@ -193,7 +194,7 @@
         <div class="container">
           <div class="footer__inner">
             <nav class="footer__nav nav">
-              <div class="nav__logo logo"><a class="logo-link" href="#top"><img class="logo-img" src="images/logo/logo.svg" alt="Логотип Хром38"></a></div>
+              <div class="nav__logo logo"><a class="logo-link" href="#top"><img class="logo-img" src="images/logo/logo.png" alt="Логотип Хром38"></a></div>
               <ul class="nav__menu">
                 <li class="nav__menu-item"><a class="nav__menu-link" href="#favorites">Услуги </a></li>
                 <li class="nav__menu-item"><a class="nav__menu-link" href="#prices">Стоимость </a></li>
@@ -203,7 +204,7 @@
               <div class="nav__socials socials"><a class="socials__link" href=""><img class="socials__img" src="images/icons/telegram.webp" alt=""></a><a class="socials__link" href=""><img class="socials__img" src="images/icons/vk.webp" alt=""></a><a class="socials__link" href=""><img class="socials__img" src="images/icons/viber.webp" alt=""></a><a class="socials__link" href=""><img class="socials__img" src="images/icons/whatsapp.webp" alt=""></a></div><a class="nav__phone btn-wrapper" href="#">
                 <div class="btn">+7 950 080 88 04</div></a><a class="nav__mail btn-wrapper" href="#">
                 <div class="btn">hrom38@yandex.ru</div></a>
-            </nav><a class="footer__policy" href="#">Политика конфиденциальности</a>
+            </nav><a class="footer__policy" href="#">Политика конфиденциальности</a><a class="footer__lapki" href="https://lapki-web.ru">РАЗРАБОТКА САЙТА СТУДИЯ LAPKI-WEB.RU</a>
           </div>
         </div>
       </footer>

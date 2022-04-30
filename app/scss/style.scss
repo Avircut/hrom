@@ -10,6 +10,7 @@
   top:35px;
   left:0;
   right:0;
+  transition: .3s all ease-in-out;
   z-index: 99;
   box-shadow: 0px 0px 3px 3px rgba(0,0,0,.7);
   &::before{
@@ -80,7 +81,9 @@
     }
   }
 }
-
+.header.top{
+  top:0;
+}
 // end header
 .burger__menu{
   display:flex;
@@ -138,9 +141,9 @@
   background-position: bottom center;
   height:100vh;
   min-height: 720px;
-  max-height: 1080px;
+  max-height: 2160px;
   position: relative;
-  max-width: 1920px;
+  max-width: 3840px;
   margin:0 auto;
   .container{
     height: 100%;
@@ -413,8 +416,9 @@
   .nav__logo{
     margin-right: auto;
   }
-  &__policy{
+  &__policy,&__lapki{
     align-self: center;
+    font-size: 16px;
   }
 } 
 @import 'media';

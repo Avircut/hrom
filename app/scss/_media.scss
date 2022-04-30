@@ -100,6 +100,9 @@
     .nav{
       row-gap: 55px;
     }
+    &__policy,&__lapki{
+      font-size: 14px;
+    }
   }
 }
 @media (max-width:1100px) {
@@ -334,7 +337,7 @@
       margin-bottom: 0;
     }
     &__answer{
-      padding-top: 40px;
+      padding-top: 30px;
     }
     .ui-accordion-header-icon{
       width:40px;
@@ -367,15 +370,21 @@
       gap:40px;
     }
     .nav__menu{
-      display: grid;
-      row-gap: 12px;
-      column-gap: 20px;
-      grid-template-columns: repeat(3,minmax(min-content,max-content));
-      grid-template-rows: repeat(2,1fr);
+      gap:25px;
     }
+    // .nav__menu{
+    //   display: grid;
+    //   row-gap: 12px;
+    //   column-gap: 20px;
+    //   grid-template-columns: repeat(3,minmax(min-content,max-content));
+    //   grid-template-rows: repeat(2,1fr);
+    // }
     .nav__socials{
       flex-basis: 100%;
       justify-content: center;
+    }
+    &__policy,&__lapki{
+      font-size: 12px;
     }
   }
   .fancybox__content{

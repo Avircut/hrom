@@ -4,9 +4,11 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title Хром38
+    link(rel="icon", type="image/x-icon", href="images/favicon.png")
     link(rel="stylesheet", href="css/style.min.css")
     script(defer="defer" src="js/main.min.js")
+    
   body
     header.header
       .container
@@ -14,7 +16,7 @@ html(lang="ru")
           nav.header__nav.nav
             .nav__logo.logo
               a(href="#top").logo-link
-                img(src="images/logo/logo.svg", alt="Логотип Хром38").logo-img
+                img(src="images/logo/logo.png", alt="Логотип Хром38").logo-img
             ul.nav__menu
               li.nav__menu-item
                 a(href="#favorites").nav__menu-link Услуги 
@@ -58,7 +60,7 @@ html(lang="ru")
           .container
             .favorites__inner
               .favorites__list
-                .favorites__item
+                .favorites__item#fari
                   img(src="images/content/favs-1.jpg", alt="Восстановление отражателей фар").favorites__img
                   .favorites__item-text
                     .favorites__line
@@ -67,7 +69,7 @@ html(lang="ru")
                     p.favorites__desc В 90% случаев плохой свет фар - это выгоревший отражатель.<br>Произведём восстановление по заводской технологии методом вакуумной металлизации с гарантией 1 год.
                     a(href="#", data-fancybox ,data-src="#form", data-type="clone").favorites__btn.btn-wrapper
                       .btn Заказать услугу
-                .favorites__item
+                .favorites__item#diski
                   img(src="images/content/favs-2.jpg", alt="Восстановление отражателей фар").favorites__img
                   .favorites__item-text
                     .favorites__line
@@ -76,7 +78,7 @@ html(lang="ru")
                     p.favorites__desc Хромирование и никелирование дисков автомобиля – одна из популярных услуг нашей компании. Чтобы рассчитать стоимость, необходимо изучить технические характеристики материала, знать радиус покрытия. Окончательная цена на хромирование и никелирование литых дисков будет сформирована после изучения объема работ, пожелания заказчика и изучения технического задания
                     a(href="#", data-fancybox ,data-src="#form", data-type="clone").favorites__btn.btn-wrapper
                       .btn Написать  нам
-                .favorites__item
+                .favorites__item#other
                   img(src="images/content/favs-3.jpg", alt="Восстановление отражателей фар").favorites__img
                   .favorites__item-text
                     .favorites__line
@@ -91,25 +93,32 @@ html(lang="ru")
               h3.prices__title Стоимость услуг
               .prices__list
                 .prices__item
-                  h4.prices__item-title Восстановление отражателей фар
+                  a(href="#fari").prices__link
+                    h4.prices__item-title Восстановление отражателей фар
                   p.prices__item-price Стоимость от 2 000 руб
                 .prices__item
-                  h4.prices__item-title Хромирование и никелирование дисков
+                  a(href="#diski").prices__link
+                    h4.prices__item-title Хромирование и никелирование дисков
                   p.prices__item-price Стоимость от 15 000 руб
                 .prices__item
-                  h4.prices__item-title Хромирование и никелирование молдингов
+                  a(href="#other").prices__link
+                    h4.prices__item-title Хромирование и никелирование молдингов
                   p.prices__item-price Стоимость от 1 500 руб
                 .prices__item
-                  h4.prices__item-title Хромирование и никелирование ручек дверей
+                  a(href="#other").prices__link
+                    h4.prices__item-title Хромирование и никелирование ручек дверей
                   p.prices__item-price Стоимость от 1 500 руб
                 .prices__item
-                  h4.prices__item-title Хромирование и никелирование решетки радиатора
+                  a(href="#other").prices__link
+                    h4.prices__item-title Хромирование и никелирование решетки радиатора
                   p.prices__item-price Стоимость от 3 000 руб
                 .prices__item
-                  h4.prices__item-title Восстановление хромированых элементов сантехники
+                  a(href="#other").prices__link
+                    h4.prices__item-title Восстановление хромированых элементов сантехники
                   p.prices__item-price Стоимость от 2 000 руб
                 .prices__item
-                  h4.prices__item-title Хромирование и никелирование шильдиков (эмблем)
+                  a(href="#other").prices__link
+                    h4.prices__item-title Хромирование и никелирование шильдиков (эмблем)
                   p.prices__item-price Стоимость от 700 руб
               a(href="#", data-fancybox ,data-src="#form", data-type="clone").price__btn.btn-wrapper
                 .btn Оставить заявку
@@ -120,7 +129,7 @@ html(lang="ru")
                 .delivery__line
                   h2.delivery__title Условия доставки
                 h4.delivery__heading Уважаемые клиенты!
-                p.delivery__desc Оформить заказ и получить подробную консультацию вы можете по телефону <br>+7 950 080 88 04 или оставив заявку на нашем сайте!
+                p.delivery__desc Оформить заказ и получить подробную консультацию вы можете по телефону <br><a href="tel:+79500808804">+7 950 080 88 04</a> или оставив заявку на нашем сайте!
                 h4.delivery__heading Способы и стоимость доставки:
                 p.delivery__desc Для жителей города Иркутска: <br>доставка от клиента и обратно по городу Иркутску – от 1000 рублей<br><br>Для жителей других регионов и городов России:<br>компания «Хром38» осуществляет доставку готовых изделий через различные удобные для Вас транспортные компании<br><br>Все услуги могут оплачиваться как наличным, так и безналичным расчетом<br><br>Услуги доставки выбранной Вами транспортной компанией оплачиваются по тарифам
               img(src="images/content/delivery.jpg", alt="Условия доставки изображение").delivery__img
@@ -163,7 +172,7 @@ html(lang="ru")
             nav.footer__nav.nav
               .nav__logo.logo
                 a(href="#top").logo-link
-                  img(src="images/logo/logo.svg", alt="Логотип Хром38").logo-img
+                  img(src="images/logo/logo.png", alt="Логотип Хром38").logo-img
               ul.nav__menu
                 li.nav__menu-item
                   a(href="#favorites").nav__menu-link Услуги 
@@ -187,3 +196,4 @@ html(lang="ru")
               a(href="#").nav__mail.btn-wrapper
                 .btn hrom38@yandex.ru
             a(href="#").footer__policy Политика конфиденциальности
+            a(href="https://lapki-web.ru").footer__lapki РАЗРАБОТКА САЙТА СТУДИЯ LAPKI-WEB.RU
