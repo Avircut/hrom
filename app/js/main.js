@@ -38,6 +38,8 @@ $('.nav__burger').on('click', () => {
   $('.burger__menu-wrapper').toggleClass('burger__menu-wrapper_opened');
 });
 
+// Smooth scrolling
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -57,7 +59,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top-65
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
@@ -73,6 +75,8 @@ $('a[href*="#"]')
       }
     }
   });
+
+  // Clip header to top on scroll
   document.addEventListener('scroll', (e) => {
     if(window.scrollY >100){
       $('.header').addClass('top');
@@ -80,3 +84,10 @@ $('a[href*="#"]')
       $('.header').removeClass('top');
     }
   })
+function validate(form){
+
+}
+$('.form').on("submit", (e) => {
+  let form = e.target;
+  console.log(form);
+})
