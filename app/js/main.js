@@ -1,7 +1,8 @@
 $('.accordion').accordion({
   heightStyle: 'content',
   header: '> .faq__question > .faq__heading',
-  collapsible: true
+  collapsible: true,
+  active:false
 });
 
 $(document).ready(function() {
