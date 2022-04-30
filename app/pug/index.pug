@@ -1,0 +1,189 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="css/style.min.css")
+    script(defer="defer" src="js/main.min.js")
+  body
+    header.header
+      .container
+        .header__inner
+          nav.header__nav.nav
+            .nav__logo.logo
+              a(href="#top").logo-link
+                img(src="images/logo/logo.svg", alt="Логотип Хром38").logo-img
+            ul.nav__menu
+              li.nav__menu-item
+                a(href="#favorites").nav__menu-link Услуги 
+              li.nav__menu-item
+                a(href="#prices").nav__menu-link Стоимость 
+              li.nav__menu-item
+                a(href="#delivery").nav__menu-link Доставка 
+              li.nav__menu-item
+                a(href="#faq").nav__menu-link Вопросы
+            .nav__socials.socials
+              a(href="").socials__link
+                img(src="images/icons/telegram.png", alt="").socials__img
+              a(href="").socials__link
+                img(src="images/icons/vk.png", alt="").socials__img
+              a(href="").socials__link
+                img(src="images/icons/viber.png", alt="").socials__img
+              a(href="").socials__link
+                img(src="images/icons/whatsapp.png", alt="").socials__img
+            a(href="#").nav__phone.btn-wrapper
+              .btn +7 950 080 88 04
+            ul.nav__burger
+              li.row.row1
+              li.row.row2
+              li.row.row3
+            .burger__menu-wrapper
+              ul.burger__menu
+              a(href="mailto:").burger__email.btn-wrapper
+                .btn E - mail
+    .wrapper
+      main.main
+        section.top-banner#top
+          .container
+            .top-banner__inner
+              h1.top-banner__title Гальваническое хромирование<br> и никелирование деталей<br> в Иркутске
+              a(href="#", data-fancybox ,data-src="#form", data-type="clone").top-banner__btn.btn-wrapper
+                .btn Сделать заказ
+          .top-banner__about
+            h3.top-banner__about-title О компании
+            p.top-banner__about-desc Производим гальваническое хромирование металлических и пластиковых деталей до 50см в длину, свыше этого размера возможно только никелирование методом напыления. В этом случае деталь никелируется и покрывается специальным защитным лаком, стойким к химическим и механическим воздействиям. Никель по отношению к хрому темнее оттенком - "тёмный хром". В случае износа лака, поверхность можно отполировать и придать первозданный вид.
+        .favorites#favorites
+          .container
+            .favorites__inner
+              .favorites__list
+                .favorites__item
+                  img(src="images/content/favs-1.jpg", alt="Восстановление отражателей фар").favorites__img
+                  .favorites__item-text
+                    .favorites__line
+                      h2.favorites__title Восстановление отражателей фар
+                      .favorites__price Стоимость от 2 000 руб
+                    p.favorites__desc В 90% случаев плохой свет фар - это выгоревший отражатель.<br>Произведём восстановление по заводской технологии методом вакуумной металлизации с гарантией 1 год.
+                    a(href="#", data-fancybox ,data-src="#form", data-type="clone").favorites__btn.btn-wrapper
+                      .btn Заказать услугу
+                .favorites__item
+                  img(src="images/content/favs-2.jpg", alt="Восстановление отражателей фар").favorites__img
+                  .favorites__item-text
+                    .favorites__line
+                      h2.favorites__title Хромирование и никелирование дисков
+                      .favorites__price Стоимость от 15 000 руб за комплект
+                    p.favorites__desc Хромирование и никелирование дисков автомобиля – одна из популярных услуг нашей компании. Чтобы рассчитать стоимость, необходимо изучить технические характеристики материала, знать радиус покрытия. Окончательная цена на хромирование и никелирование литых дисков будет сформирована после изучения объема работ, пожелания заказчика и изучения технического задания
+                    a(href="#", data-fancybox ,data-src="#form", data-type="clone").favorites__btn.btn-wrapper
+                      .btn Написать  нам
+                .favorites__item
+                  img(src="images/content/favs-3.jpg", alt="Восстановление отражателей фар").favorites__img
+                  .favorites__item-text
+                    .favorites__line
+                      h2.favorites__title Хромирование и никелирование декоративных элементов
+                      .favorites__price Стоимость от 1 500 руб
+                    p.favorites__desc Наша компания занимается хромированием и восстановлением различных элементов декора автомобильных и бытовых деталей. Хромирование молдингов автомобиля, ручек дверей, решеток радиаторов, шильдиков (эмблем), восстановлением поврежденных хромированных элементов сантехники.
+                    a(href="#", data-fancybox ,data-src="#form", data-type="clone").favorites__btn.btn-wrapper
+                      .btn Связаться с нами
+        section.prices#prices
+          .container
+            .prices__inner
+              h3.prices__title Стоимость услуг
+              .prices__list
+                .prices__item
+                  h4.prices__item-title Восстановление отражателей фар
+                  p.prices__item-price Стоимость от 2 000 руб
+                .prices__item
+                  h4.prices__item-title Хромирование и никелирование дисков
+                  p.prices__item-price Стоимость от 15 000 руб
+                .prices__item
+                  h4.prices__item-title Хромирование и никелирование молдингов
+                  p.prices__item-price Стоимость от 1 500 руб
+                .prices__item
+                  h4.prices__item-title Хромирование и никелирование ручек дверей
+                  p.prices__item-price Стоимость от 1 500 руб
+                .prices__item
+                  h4.prices__item-title Хромирование и никелирование решетки радиатора
+                  p.prices__item-price Стоимость от 3 000 руб
+                .prices__item
+                  h4.prices__item-title Восстановление хромированых элементов сантехники
+                  p.prices__item-price Стоимость от 2 000 руб
+                .prices__item
+                  h4.prices__item-title Хромирование и никелирование шильдиков (эмблем)
+                  p.prices__item-price Стоимость от 700 руб
+              a(href="#", data-fancybox ,data-src="#form", data-type="clone").price__btn.btn-wrapper
+                .btn Оставить заявку
+        section.delivery#delivery
+          .container
+            .delivery__inner
+              .delivery__item-text
+                .delivery__line
+                  h2.delivery__title Условия доставки
+                h4.delivery__heading Уважаемые клиенты!
+                p.delivery__desc Оформить заказ и получить подробную консультацию вы можете по телефону <br>+7 950 080 88 04 или оставив заявку на нашем сайте!
+                h4.delivery__heading Способы и стоимость доставки:
+                p.delivery__desc Для жителей города Иркутска: <br>доставка от клиента и обратно по городу Иркутску – от 1000 рублей<br><br>Для жителей других регионов и городов России:<br>компания «Хром38» осуществляет доставку готовых изделий через различные удобные для Вас транспортные компании<br><br>Все услуги могут оплачиваться как наличным, так и безналичным расчетом<br><br>Услуги доставки выбранной Вами транспортной компанией оплачиваются по тарифам
+              img(src="images/content/delivery.jpg", alt="Условия доставки изображение").delivery__img
+        section.faq#faq
+          .container
+            .faq__inner
+              h3.faq__title Ответы на популярные вопросы
+              .faq__questions.accordion
+                .faq__question
+                  h4.faq__heading Какая прочность у никеля?
+                  p.faq__answer Никель покрывается защитным лаком, его прочность сравнительна с порошковой краской.
+                .faq__question
+                  h4.faq__heading Пескоструем ли мы диски?
+                  p.faq__answer Нет, диски мы не пескоструем, принимаем детали только после обработки в чистом виде.
+                .faq__question
+                  h4.faq__heading Насколько долговечно покрытие отражателей фар?
+                  p.faq__answer Наша технология нанесения практически не отличается от заводского исполнения, поэтому прослужит долгие годы как и на вашем авто после выпуска. Гарантия 1 год.
+                .faq__question
+                  h4.faq__heading Действует ли скидка от объёма?
+                  p.faq__answer Да, скидка действует от объема работ и деталей.
+                .faq__question
+                  h4.faq__heading Снимаете и устанавливаете ли вы детали с авто?
+                  p.faq__answer Нет, детали необходимо привозить отдельно от автомобиля.
+        section.form#form
+          .container
+            .form__inner
+              h3.form__title Остались вопросы?
+              .form__grid
+                .btn-wrapper
+                  input(type="text", placeholder="Имя...").form__input
+                .btn-wrapper
+                  input(type="tel", placeholder="Телефон...").form__input
+                .btn-wrapper.area-wrapper
+                  textarea(placeholder="Сообщение...").form__area
+              a(href="#").form__btn.btn-wrapper
+                .btn Отправить
+      footer.footer
+        .container
+          .footer__inner
+            nav.footer__nav.nav
+              .nav__logo.logo
+                a(href="#top").logo-link
+                  img(src="images/logo/logo.svg", alt="Логотип Хром38").logo-img
+              ul.nav__menu
+                li.nav__menu-item
+                  a(href="#favorites").nav__menu-link Услуги 
+                li.nav__menu-item
+                  a(href="#prices").nav__menu-link Стоимость 
+                li.nav__menu-item
+                  a(href="#delivery").nav__menu-link Доставка 
+                li.nav__menu-item
+                  a(href="#faq").nav__menu-link Вопросы
+              .nav__socials.socials
+                a(href="").socials__link
+                  img(src="images/icons/telegram.png", alt="").socials__img
+                a(href="").socials__link
+                  img(src="images/icons/vk.png", alt="").socials__img
+                a(href="").socials__link
+                  img(src="images/icons/viber.png", alt="").socials__img
+                a(href="").socials__link
+                  img(src="images/icons/whatsapp.png", alt="").socials__img
+              a(href="#").nav__phone.btn-wrapper
+                .btn +7 950 080 88 04
+              a(href="#").nav__mail.btn-wrapper
+                .btn E - mail
+            a(href="#").footer__policy Политика конфиденциальности
