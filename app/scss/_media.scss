@@ -411,15 +411,23 @@
   h3{
     text-align: center;
   }
-  .logo{
-    .logo-img{
-      width:80px;
-      height:53px;
-    }
-  }
+  // .logo{
+  //   .logo-img{
+  //     width:80px;
+  //     height:53px;
+  //   }
+  // }
   .header{
+    .container{
+      padding:0 10px;
+    }
     .nav{
       gap:10px;
+    }
+    .btn-wrapper{
+      .btn{
+        padding:7px 13px;
+      }
     }
   }
   .top-banner{

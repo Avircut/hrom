@@ -153,7 +153,7 @@ html(lang="ru")
                 .faq__question
                   h4.faq__heading Снимаете и устанавливаете ли вы детали с авто?
                   p.faq__answer Нет, детали необходимо привозить отдельно от автомобиля.
-        section.form#form
+        form(method="post").form#form
           .container
             .form__inner
               h3.form__title Остались вопросы?
@@ -164,7 +164,8 @@ html(lang="ru")
                   input(type="tel", placeholder="Телефон...", name="phone").form__input
                 .btn-wrapper.area-wrapper
                   textarea(placeholder="Сообщение...", name="msg").form__area
-              a(href="#").form__btn.btn-wrapper
+                p.form__validate-text
+              a.form__btn.btn-wrapper
                 .btn Отправить
       footer.footer
         .container
