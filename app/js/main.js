@@ -84,9 +84,24 @@ $('a[href*="#"]')
       $('.header').removeClass('top');
     }
   })
-function validate(form){
-
+let ajaxSendMail = function() {
+  let form = $(this);
+  $.ajax({
+    url: form.attr('action'),
+    method:form.attr('method'),
+    data: form.serialize(),
+    success: function(result){
+      if(result == 'success'){
+        $('.form__validate-text').text('Успешно отправлено письмо');
+      }
+      else{
+        $('.form__validate-text').text('Произошла ошибка при отправке');
+      }
+    }
+  })
 }
+
+
 const forms = document.querySelectorAll('.form');
 const regex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/
 forms.forEach((el) => {
@@ -105,24 +120,7 @@ forms.forEach((el) => {
       msg.innerHTML='Введите, пожалуйста, корректный номер телефона';
     }
     else{
-    el.submit();
+      ajaxSendMail();
     }
   })
-})
-$('.form').on("submit", function() {
-  let form = $(this);
-  $.ajax({
-    url: 'email.php',
-    method:form.attr('method'),
-    data: form.serialize(),
-    success: function(result){
-      if(result == 'success'){
-        $('.form__validate-text').text('Успешно отправлено письмо');
-      }
-      else{
-        $('.form__validate-text').text('Произошла ошибка при отправке');
-      }
-    }
-  })
-  return false;
 })
